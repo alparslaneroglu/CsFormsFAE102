@@ -112,11 +112,23 @@
     <Compile Include="Entity\Territories.cs">
       <DependentUpon>NorthwindModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="Formİslemleri\frmAlCons.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formİslemleri\frmAlCons.Designer.cs">
+      <DependentUpon>frmAlCons.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formİslemleri\frmAltProp.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Formİslemleri\frmAltProp.Designer.cs">
       <DependentUpon>frmAltProp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formİslemleri\frmGonderCons.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formİslemleri\frmGonderCons.Designer.cs">
+      <DependentUpon>frmGonderCons.cs</DependentUpon>
     </Compile>
     <Compile Include="Formİslemleri\frmGonderProp.cs">
       <SubType>Form</SubType>
@@ -125,16 +137,74 @@
       <DependentUpon>frmGonderProp.cs</DependentUpon>
     </Compile>
     <Compile Include="Formİslemleri\ModelKisi.cs" />
+    <Compile Include="Formİslemleri\urunGonder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formİslemleri\urunGonder.Designer.cs">
+      <DependentUpon>urunGonder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formİslemleri\urunSonuc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formİslemleri\urunSonuc.Designer.cs">
+      <DependentUpon>urunSonuc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogrenciİsleri\frmBolumGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ogrenciİsleri\frmBolumGiris.Designer.cs">
+      <DependentUpon>frmBolumGiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogrenciİsleri\OgrEntity\StudentsModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StudentsModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Ogrenciİsleri\OgrEntity\StudentsModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StudentsModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Ogrenciİsleri\OgrEntity\StudentsModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StudentsModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Ogrenciİsleri\OgrEntity\tblDepartments.cs">
+      <DependentUpon>StudentsModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Ogrenciİsleri\OgrEntity\tblOgrenciBilgileri.cs">
+      <DependentUpon>StudentsModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Ogrenciİsleri\OgrEntity\tblSehirler.cs">
+      <DependentUpon>StudentsModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Ogrenciİsleri\Student.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="AnaSayfa.resx">
       <DependentUpon>AnaSayfa.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formİslemleri\frmAlCons.resx">
+      <DependentUpon>frmAlCons.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formİslemleri\frmAltProp.resx">
       <DependentUpon>frmAltProp.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formİslemleri\frmGonderCons.resx">
+      <DependentUpon>frmGonderCons.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formİslemleri\frmGonderProp.resx">
       <DependentUpon>frmGonderProp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formİslemleri\urunGonder.resx">
+      <DependentUpon>urunGonder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formİslemleri\urunSonuc.resx">
+      <DependentUpon>urunSonuc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ogrenciİsleri\frmBolumGiris.resx">
+      <DependentUpon>frmBolumGiris.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -151,6 +221,13 @@
     </EntityDeploy>
     <None Include="Entity\NorthwindModel.edmx.diagram">
       <DependentUpon>NorthwindModel.edmx</DependentUpon>
+    </None>
+    <EntityDeploy Include="Ogrenciİsleri\OgrEntity\StudentsModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>StudentsModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Ogrenciİsleri\OgrEntity\StudentsModel.edmx.diagram">
+      <DependentUpon>StudentsModel.edmx</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -176,6 +253,16 @@
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>NorthwindModel.edmx</DependentUpon>
       <LastGenOutput>NorthwindModel.cs</LastGenOutput>
+    </Content>
+    <Content Include="Ogrenciİsleri\OgrEntity\StudentsModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>StudentsModel.edmx</DependentUpon>
+      <LastGenOutput>StudentsModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Ogrenciİsleri\OgrEntity\StudentsModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>StudentsModel.edmx</DependentUpon>
+      <LastGenOutput>StudentsModel.cs</LastGenOutput>
     </Content>
   </ItemGroup>
   <ItemGroup>

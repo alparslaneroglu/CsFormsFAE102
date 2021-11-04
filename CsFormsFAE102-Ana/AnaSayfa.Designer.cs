@@ -54,6 +54,10 @@ namespace CsFormsFAE102_Ana
             this.pnl1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.btnGonderProp = new System.Windows.Forms.Button();
+            this.btnGonderCons = new System.Windows.Forms.Button();
+            this.btnCollaps = new System.Windows.Forms.Button();
+            this.urunGonder = new System.Windows.Forms.Button();
+            this.btnDepartments = new System.Windows.Forms.Button();
             this.pnlust.SuspendLayout();
             this.gbSol.SuspendLayout();
             this.pnl7.SuspendLayout();
@@ -79,12 +83,13 @@ namespace CsFormsFAE102_Ana
             this.pnlust.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlust.Location = new System.Drawing.Point(0, 0);
             this.pnlust.Name = "pnlust";
-            this.pnlust.Size = new System.Drawing.Size(1294, 70);
+            this.pnlust.Size = new System.Drawing.Size(1320, 70);
             this.pnlust.TabIndex = 0;
             // 
             // btnExit
             // 
-            this.btnExit.Location = new System.Drawing.Point(1204, 12);
+            this.btnExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnExit.Location = new System.Drawing.Point(1230, 12);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(69, 37);
             this.btnExit.TabIndex = 7;
@@ -94,9 +99,9 @@ namespace CsFormsFAE102_Ana
             // 
             // button7
             // 
-            this.button7.Location = new System.Drawing.Point(498, 12);
+            this.button7.Location = new System.Drawing.Point(493, 12);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(69, 37);
+            this.button7.Size = new System.Drawing.Size(69, 48);
             this.button7.TabIndex = 6;
             this.button7.Text = "button7";
             this.button7.UseVisualStyleBackColor = true;
@@ -104,9 +109,9 @@ namespace CsFormsFAE102_Ana
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(417, 12);
+            this.button6.Location = new System.Drawing.Point(412, 12);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(69, 37);
+            this.button6.Size = new System.Drawing.Size(69, 48);
             this.button6.TabIndex = 5;
             this.button6.Text = "button6";
             this.button6.UseVisualStyleBackColor = true;
@@ -114,9 +119,9 @@ namespace CsFormsFAE102_Ana
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(336, 12);
+            this.button5.Location = new System.Drawing.Point(331, 12);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(69, 37);
+            this.button5.Size = new System.Drawing.Size(69, 48);
             this.button5.TabIndex = 4;
             this.button5.Text = "button5";
             this.button5.UseVisualStyleBackColor = true;
@@ -124,9 +129,9 @@ namespace CsFormsFAE102_Ana
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(249, 12);
+            this.button4.Location = new System.Drawing.Point(244, 12);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(69, 37);
+            this.button4.Size = new System.Drawing.Size(69, 48);
             this.button4.TabIndex = 3;
             this.button4.Text = "button4";
             this.button4.UseVisualStyleBackColor = true;
@@ -134,9 +139,9 @@ namespace CsFormsFAE102_Ana
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(168, 12);
+            this.button3.Location = new System.Drawing.Point(163, 12);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(69, 37);
+            this.button3.Size = new System.Drawing.Size(69, 48);
             this.button3.TabIndex = 2;
             this.button3.Text = "button3";
             this.button3.UseVisualStyleBackColor = true;
@@ -144,38 +149,38 @@ namespace CsFormsFAE102_Ana
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(87, 12);
+            this.button2.Location = new System.Drawing.Point(82, 12);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(69, 37);
+            this.button2.Size = new System.Drawing.Size(69, 48);
             this.button2.TabIndex = 1;
-            this.button2.Text = "button2";
+            this.button2.Text = "Ogrenci İşleri";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(6, 12);
+            this.button1.Location = new System.Drawing.Point(7, 9);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(69, 37);
+            this.button1.Size = new System.Drawing.Size(69, 51);
             this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
+            this.button1.Text = "Form İşlemler";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // gbSol
             // 
             this.gbSol.BackColor = System.Drawing.Color.DarkGray;
+            this.gbSol.Controls.Add(this.pnl1);
             this.gbSol.Controls.Add(this.pnl7);
             this.gbSol.Controls.Add(this.pnl6);
             this.gbSol.Controls.Add(this.pnl5);
             this.gbSol.Controls.Add(this.pnl4);
             this.gbSol.Controls.Add(this.pnl3);
             this.gbSol.Controls.Add(this.pnl2);
-            this.gbSol.Controls.Add(this.pnl1);
             this.gbSol.Dock = System.Windows.Forms.DockStyle.Left;
             this.gbSol.Location = new System.Drawing.Point(0, 70);
             this.gbSol.Name = "gbSol";
-            this.gbSol.Size = new System.Drawing.Size(173, 623);
+            this.gbSol.Size = new System.Drawing.Size(174, 623);
             this.gbSol.TabIndex = 1;
             this.gbSol.TabStop = false;
             this.gbSol.Text = "***";
@@ -185,7 +190,7 @@ namespace CsFormsFAE102_Ana
             this.pnl7.BackColor = System.Drawing.Color.Silver;
             this.pnl7.Controls.Add(this.lbl7);
             this.pnl7.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pnl7.Location = new System.Drawing.Point(1023, 18);
+            this.pnl7.Location = new System.Drawing.Point(853, 18);
             this.pnl7.Name = "pnl7";
             this.pnl7.Size = new System.Drawing.Size(200, 602);
             this.pnl7.TabIndex = 6;
@@ -207,7 +212,7 @@ namespace CsFormsFAE102_Ana
             this.pnl6.BackColor = System.Drawing.Color.Silver;
             this.pnl6.Controls.Add(this.lbl6);
             this.pnl6.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pnl6.Location = new System.Drawing.Point(853, 18);
+            this.pnl6.Location = new System.Drawing.Point(683, 18);
             this.pnl6.Name = "pnl6";
             this.pnl6.Size = new System.Drawing.Size(170, 602);
             this.pnl6.TabIndex = 5;
@@ -229,7 +234,7 @@ namespace CsFormsFAE102_Ana
             this.pnl5.BackColor = System.Drawing.Color.Silver;
             this.pnl5.Controls.Add(this.lbl5);
             this.pnl5.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pnl5.Location = new System.Drawing.Point(683, 18);
+            this.pnl5.Location = new System.Drawing.Point(513, 18);
             this.pnl5.Name = "pnl5";
             this.pnl5.Size = new System.Drawing.Size(170, 602);
             this.pnl5.TabIndex = 4;
@@ -251,7 +256,7 @@ namespace CsFormsFAE102_Ana
             this.pnl4.BackColor = System.Drawing.Color.Silver;
             this.pnl4.Controls.Add(this.lbl4);
             this.pnl4.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pnl4.Location = new System.Drawing.Point(513, 18);
+            this.pnl4.Location = new System.Drawing.Point(343, 18);
             this.pnl4.Name = "pnl4";
             this.pnl4.Size = new System.Drawing.Size(170, 602);
             this.pnl4.TabIndex = 3;
@@ -273,7 +278,7 @@ namespace CsFormsFAE102_Ana
             this.pnl3.BackColor = System.Drawing.Color.Silver;
             this.pnl3.Controls.Add(this.lbl3);
             this.pnl3.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pnl3.Location = new System.Drawing.Point(343, 18);
+            this.pnl3.Location = new System.Drawing.Point(173, 18);
             this.pnl3.Name = "pnl3";
             this.pnl3.Size = new System.Drawing.Size(170, 602);
             this.pnl3.TabIndex = 2;
@@ -293,9 +298,10 @@ namespace CsFormsFAE102_Ana
             // pnl2
             // 
             this.pnl2.BackColor = System.Drawing.Color.Silver;
+            this.pnl2.Controls.Add(this.btnDepartments);
             this.pnl2.Controls.Add(this.lbl2);
             this.pnl2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pnl2.Location = new System.Drawing.Point(173, 18);
+            this.pnl2.Location = new System.Drawing.Point(3, 18);
             this.pnl2.Name = "pnl2";
             this.pnl2.Size = new System.Drawing.Size(170, 602);
             this.pnl2.TabIndex = 1;
@@ -315,10 +321,12 @@ namespace CsFormsFAE102_Ana
             // pnl1
             // 
             this.pnl1.BackColor = System.Drawing.Color.Silver;
+            this.pnl1.Controls.Add(this.urunGonder);
+            this.pnl1.Controls.Add(this.btnGonderCons);
             this.pnl1.Controls.Add(this.btnGonderProp);
             this.pnl1.Controls.Add(this.label1);
             this.pnl1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pnl1.Location = new System.Drawing.Point(3, 18);
+            this.pnl1.Location = new System.Drawing.Point(1053, 18);
             this.pnl1.Name = "pnl1";
             this.pnl1.Size = new System.Drawing.Size(170, 602);
             this.pnl1.TabIndex = 0;
@@ -332,7 +340,7 @@ namespace CsFormsFAE102_Ana
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(170, 23);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Panel1";
+            this.label1.Text = "Form İşlemleri";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btnGonderProp
@@ -345,16 +353,60 @@ namespace CsFormsFAE102_Ana
             this.btnGonderProp.UseVisualStyleBackColor = true;
             this.btnGonderProp.Click += new System.EventHandler(this.btnGonderProp_Click);
             // 
+            // btnGonderCons
+            // 
+            this.btnGonderCons.Location = new System.Drawing.Point(-3, 90);
+            this.btnGonderCons.Name = "btnGonderCons";
+            this.btnGonderCons.Size = new System.Drawing.Size(173, 31);
+            this.btnGonderCons.TabIndex = 2;
+            this.btnGonderCons.Text = "Veri Gönder (Cons)";
+            this.btnGonderCons.UseVisualStyleBackColor = true;
+            this.btnGonderCons.Click += new System.EventHandler(this.btnGonderCons_Click);
+            // 
+            // btnCollaps
+            // 
+            this.btnCollaps.Dock = System.Windows.Forms.DockStyle.Left;
+            this.btnCollaps.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnCollaps.Location = new System.Drawing.Point(174, 70);
+            this.btnCollaps.Name = "btnCollaps";
+            this.btnCollaps.Size = new System.Drawing.Size(28, 623);
+            this.btnCollaps.TabIndex = 3;
+            this.btnCollaps.Text = "GİZLE";
+            this.btnCollaps.UseVisualStyleBackColor = true;
+            this.btnCollaps.Click += new System.EventHandler(this.btnCollaps_Click);
+            // 
+            // urunGonder
+            // 
+            this.urunGonder.Location = new System.Drawing.Point(0, 139);
+            this.urunGonder.Name = "urunGonder";
+            this.urunGonder.Size = new System.Drawing.Size(167, 29);
+            this.urunGonder.TabIndex = 3;
+            this.urunGonder.Text = "Ürün Gönder";
+            this.urunGonder.UseVisualStyleBackColor = true;
+            this.urunGonder.Click += new System.EventHandler(this.urunGonder_Click);
+            // 
+            // btnDepartments
+            // 
+            this.btnDepartments.Location = new System.Drawing.Point(4, 44);
+            this.btnDepartments.Name = "btnDepartments";
+            this.btnDepartments.Size = new System.Drawing.Size(158, 29);
+            this.btnDepartments.TabIndex = 1;
+            this.btnDepartments.Text = "Bölüm Giris";
+            this.btnDepartments.UseVisualStyleBackColor = true;
+            this.btnDepartments.Click += new System.EventHandler(this.btnDepartments_Click);
+            // 
             // AnaSayfa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1294, 693);
+            this.ClientSize = new System.Drawing.Size(1320, 693);
+            this.Controls.Add(this.btnCollaps);
             this.Controls.Add(this.gbSol);
             this.Controls.Add(this.pnlust);
             this.IsMdiContainer = true;
             this.Name = "AnaSayfa";
             this.Text = "Form1";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.AnaSayfa_Load);
             this.pnlust.ResumeLayout(false);
             this.gbSol.ResumeLayout(false);
@@ -396,6 +448,10 @@ namespace CsFormsFAE102_Ana
         private System.Windows.Forms.Panel pnl1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnGonderProp;
+        private System.Windows.Forms.Button btnGonderCons;
+        private System.Windows.Forms.Button btnCollaps;
+        private System.Windows.Forms.Button urunGonder;
+        private System.Windows.Forms.Button btnDepartments;
     }
 }
 

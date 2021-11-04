@@ -1,4 +1,5 @@
 ﻿using CsFormsFAE102_Ana.Formİslemleri;
+using CsFormsFAE102_Ana.Ogrenciİsleri;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -97,12 +98,51 @@ namespace CsFormsFAE102_Ana
 
         #endregion
 
+        #region From İslemleri
         private void btnGonderProp_Click(object sender, EventArgs e)
         {
             frmGonderProp frm = new frmGonderProp();
             frm.MdiParent = Form.ActiveForm; // anasayfa frm nin parent'ı oluyor.
             frm.WindowState = FormWindowState.Maximized;
             frm.Show();
+        }
+
+        private void btnGonderCons_Click(object sender, EventArgs e)
+        {
+            frmGonderCons frm = new frmGonderCons();
+            frm.MdiParent = Form.ActiveForm;
+            frm.WindowState = FormWindowState.Maximized;
+            frm.Show();
+        }
+        private void btnCollaps_Click(object sender, EventArgs e)
+        {
+            if (gbSol.Visible == true)
+            {
+                gbSol.Visible = false;
+                btnCollaps.Text = "GOSTER";
+
+            }
+            else if (gbSol.Visible == false)
+            {
+                gbSol.Visible = true;
+                btnCollaps.Text = "GIZLE";
+            }
+        }
+
+        #endregion
+
+        private void urunGonder_Click(object sender, EventArgs e)
+        {
+            urunGonder ugndr = new urunGonder();
+            ugndr.MdiParent = Application.OpenForms["Anasayfa"] as AnaSayfa;
+            ugndr.WindowState = FormWindowState.Maximized;
+            ugndr.Show();
+        }
+
+        private void btnDepartments_Click(object sender, EventArgs e)
+        {
+            frmBolumGiris frm = new frmBolumGiris();
+            frm.ShowDialog();
         }
     }
 }
