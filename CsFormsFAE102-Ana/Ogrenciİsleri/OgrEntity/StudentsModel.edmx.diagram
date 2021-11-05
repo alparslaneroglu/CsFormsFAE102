@@ -7,7 +7,7 @@
       <Diagram DiagramId="62b05fb3fbec4eb4b30268d57fcbd428" Name="Diagram1">
         <EntityTypeShape EntityType="StudentsModel.tblDepartments" Width="1.5" PointX="0.75" PointY="1.5" IsExpanded="true" />
         <EntityTypeShape EntityType="StudentsModel.tblOgrenciBilgileri" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
-        <EntityTypeShape EntityType="StudentsModel.tblSehirler" Width="1.5" PointX="0.75" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="StudentsModel.tblSehirler" Width="1.5" PointX="6" PointY="1.5" IsExpanded="true" />
         <AssociationConnector Association="StudentsModel.FK_tblOgrenciBilgileri_tblDepartments" ManuallyRouted="false" />
         <AssociationConnector Association="StudentsModel.FK_tblOgrenciBilgileri_tblSehirler" ManuallyRouted="false" />
       </Diagram>

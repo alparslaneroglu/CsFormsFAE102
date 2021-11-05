@@ -4,13 +4,14 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="StudentsModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="StudentsModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="tblDepartments">
           <Key>
             <PropertyRef Name="Id" />
           </Key>
           <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="BolumAdı" Type="nvarchar" MaxLength="100" />
+          <Property Name="isActive" Type="bit" />
         </EntityType>
         <EntityType Name="tblOgrenciBilgileri">
           <Key>
@@ -68,8 +69,7 @@
             <End Role="tblOgrenciBilgileri" EntitySet="tblOgrenciBilgileri" />
           </AssociationSet>
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="StudentsModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -80,6 +80,7 @@
           <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="BolumAdı" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
           <NavigationProperty Name="tblOgrenciBilgileri" Relationship="Self.FK_tblOgrenciBilgileri_tblDepartments" FromRole="tblDepartments" ToRole="tblOgrenciBilgileri" />
+          <Property Name="isActive" Type="Boolean" />
         </EntityType>
         <EntityType Name="tblOgrenciBilgileri">
           <Key>
@@ -149,6 +150,7 @@
           <EntitySetMapping Name="tblDepartments">
             <EntityTypeMapping TypeName="StudentsModel.tblDepartments">
               <MappingFragment StoreEntitySet="tblDepartments">
+                <ScalarProperty Name="isActive" ColumnName="isActive" />
                 <ScalarProperty Name="Id" ColumnName="Id" />
                 <ScalarProperty Name="BolumAdı" ColumnName="BolumAdı" />
               </MappingFragment>
