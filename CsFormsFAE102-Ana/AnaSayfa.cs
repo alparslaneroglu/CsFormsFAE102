@@ -144,5 +144,13 @@ namespace CsFormsFAE102_Ana
             frmBolumGiris frm = new frmBolumGiris();
             frm.ShowDialog();
         }
+
+        private void btnOgrenciGiris_Click(object sender, EventArgs e)
+        {
+            frmOgrenciGiris frm = new frmOgrenciGiris();
+            frm.MdiParent = Form.ActiveForm;
+            frm.WindowState = FormWindowState.Maximized;
+            frm.Show();
+        }
     }
 }

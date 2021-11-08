@@ -156,6 +156,12 @@
     <Compile Include="Ogrenciİsleri\frmBolumGiris.Designer.cs">
       <DependentUpon>frmBolumGiris.cs</DependentUpon>
     </Compile>
+    <Compile Include="Ogrenciİsleri\frmOgrenciGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ogrenciİsleri\frmOgrenciGiris.Designer.cs">
+      <DependentUpon>frmOgrenciGiris.cs</DependentUpon>
+    </Compile>
     <Compile Include="Ogrenciİsleri\OgrEntity\StudentsModel.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -206,6 +212,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Ogrenciİsleri\frmBolumGiris.resx">
       <DependentUpon>frmBolumGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ogrenciİsleri\frmOgrenciGiris.resx">
+      <DependentUpon>frmOgrenciGiris.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
