@@ -43,6 +43,10 @@ namespace CsFormsFAE102_Ana.Fonksiyonlar
             MessageBox.Show("" + e, "Kayıt Guncelleme", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
 
+        public void Hata(Exception hata)
+        {
+            MessageBox.Show(hata.Message, "Isler yolunda gitmiyor", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
 
         public void Sil(bool sil)
         {
